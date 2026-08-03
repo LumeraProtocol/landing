@@ -1,0 +1,169 @@
+<div data-page="protocol" data-screen-label="Protocol" style="display:none;">
+<div data-rail style="position:fixed;left:26px;top:50%;transform:translateY(-50%);z-index:40;display:none;flex-direction:column;gap:2px;pointer-events:auto;"><a data-rail-item href="#shift" data-rail-target="shift" style="display:flex;align-items:center;gap:10px;padding:5px 0;text-decoration:none;"><span data-rail-tick style="width:16px;height:1px;background:rgba(255,255,255,.22);transition:width .3s,background .3s;"></span><span data-rail-label style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.13em;white-space:nowrap;transition:color .3s;">The shift</span></a><a data-rail-item href="#vision" data-rail-target="vision" style="display:flex;align-items:center;gap:10px;padding:5px 0;text-decoration:none;"><span data-rail-tick style="width:16px;height:1px;background:rgba(255,255,255,.22);transition:width .3s,background .3s;"></span><span data-rail-label style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.13em;white-space:nowrap;transition:color .3s;">Gaps &amp; answers</span></a><a data-rail-item href="#thesis" data-rail-target="thesis" style="display:flex;align-items:center;gap:10px;padding:5px 0;text-decoration:none;"><span data-rail-tick style="width:16px;height:1px;background:rgba(255,255,255,.22);transition:width .3s,background .3s;"></span><span data-rail-label style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.13em;white-space:nowrap;transition:color .3s;">The thesis</span></a><a data-rail-item href="#authority" data-rail-target="authority" style="display:flex;align-items:center;gap:10px;padding:5px 0;text-decoration:none;"><span data-rail-tick style="width:16px;height:1px;background:rgba(255,255,255,.22);transition:width .3s,background .3s;"></span><span data-rail-label style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.13em;white-space:nowrap;transition:color .3s;">Authority</span></a></div>
+
+<section data-anchor="shift" style="padding:150px 44px 70px;max-width:1180px;margin:0 auto;">
+<h1 data-reveal-head style="font:800 clamp(40px,5.4vw,76px)/1.0 'Geist';letter-spacing:-.032em;color:#FFFFFF;max-width:900px;margin:0;">Agents can already do the work. Nobody can check it.</h1>
+<p style="font:400 19px/1.6 'Geist';color:#C3CBD9;max-width:660px;margin:24px 0 0;">A single model call is a solved problem. An agent that remembers a customer, spends a budget, hires another agent and hands you an answer you can audit afterwards is not. That gap is what Lumera closes.</p>
+<div style="display:flex;gap:12px;margin-top:32px;flex-wrap:wrap;">
+<a href="#protocol" data-magnetic data-accent-bg style="font:600 14.5px 'Geist';color:#001432;background:#47C78A;padding:15px 26px;border-radius:10px;">See the architecture →</a>
+<a href="#roadmap" data-magnetic style="font:600 14.5px 'Geist';color:#F5F5FA;border:1px solid rgba(255,255,255,.22);padding:15px 26px;border-radius:10px;">View the roadmap</a>
+</div>
+</section>
+
+<section data-anchor="vision" style="padding:40px 44px 100px;max-width:1180px;margin:0 auto;">
+<div data-accent-fg style="font:600 11px 'Geist Mono';letter-spacing:.22em;color:#47C78A;text-transform:uppercase;">The gaps and the answers</div>
+<h2 data-reveal-head style="font:700 clamp(30px,3.6vw,48px)/1.08 'Geist';letter-spacing:-.03em;color:#FFFFFF;max-width:780px;margin:16px 0 12px;">What's missing today, and what closes it.</h2>
+<p style="font:400 17px/1.6 'Geist';color:#C3CBD9;max-width:640px;margin:0 0 30px;">The gaps are architectural, not incremental, and they depend on each other. Identity without settlement is unenforceable. Settlement without identity is unaccountable. Open any row to see what breaks today and what replaces it.</p>
+<div data-acc data-anchor-alias="pillars" style="border-top:1px solid rgba(255,255,255,.09);">
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:78px 1fr 34px;gap:20px;align-items:start;padding:26px 4px;cursor:pointer;">
+<div><div data-accent-fg style="font:700 22px 'Geist';color:#47C78A;">01</div><div style="font:500 9.5px/1.35 'Geist Mono';color:#8C99AD;text-transform:uppercase;letter-spacing:.13em;margin-top:5px;">Aether</div></div>
+<div>
+<div style="display:inline-flex;align-items:center;gap:7px;margin-bottom:7px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;flex:0 0 auto;"></span><span style="font:500 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">No sovereign identity</span></div>
+<div style="font:600 clamp(18px,1.9vw,23px)/1.25 'Geist';color:#FFFFFF;">Trust &amp; Identity</div>
+<div style="font:400 15px/1.55 'Geist';color:#96A2B6;margin:6px 0 0;">An identity the agent owns, not an API key on someone else’s account.</div>
+</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .3s;">+</div>
+</div>
+<div data-acc-body style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s;">
+<div style="padding:0 4px 30px 98px;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(300px,1.5fr);gap:34px;align-items:start;">
+<div style="border-left:1px solid rgba(255,255,255,.12);padding-left:18px;">
+<div style="font:600 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">Today</div>
+<p style="font:400 14.5px/1.7 'Geist';color:#8C99AD;margin:0;">An agent’s identity is an API key belonging to someone else. Revocable, non-portable, carrying no independent reputation. It cannot accumulate a record, delegate authority, or be held accountable for anything.</p>
+</div>
+<div style="border-left:1px solid rgba(71,199,138,.45);padding-left:18px;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">On Lumera</div>
+<p style="font:400 15px/1.7 'Geist';color:#96A2B6;margin:0;">LumeraID is the universal on-chain principal for users, agents, applications, data assets and providers. It is a container that accumulates claims over time.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;"><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Profile</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">KeyRotation</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Delegation</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">CapabilityGrant</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">AppIdentity</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">AssetIdentity</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Attestation</span></div>
+<p style="font:400 14px/1.65 'Geist';color:#C3CBD9;margin:16px 0 0;"><strong style="color:#FFFFFF;font-weight:600;">Delegation chains are the enterprise wedge.</strong> Grant an agent a budget class or a dataset. Scoped, time-bound, revocable, enforced on-chain.</p>
+</div>
+</div>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:78px 1fr 34px;gap:20px;align-items:start;padding:26px 4px;cursor:pointer;">
+<div><div data-accent-fg style="font:700 22px 'Geist';color:#47C78A;">02</div><div style="font:500 9.5px/1.35 'Geist Mono';color:#8C99AD;text-transform:uppercase;letter-spacing:.13em;margin-top:5px;">x/agent</div></div>
+<div>
+<div style="display:inline-flex;align-items:center;gap:7px;margin-bottom:7px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;flex:0 0 auto;"></span><span style="font:500 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">No verifiable execution</span></div>
+<div style="font:600 clamp(18px,1.9vw,23px)/1.25 'Geist';color:#FFFFFF;">Verifiable Execution</div>
+<div style="font:400 15px/1.55 'Geist';color:#96A2B6;margin:6px 0 0;">Proof of what ran, what it cost, and that you accepted it.</div>
+</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .3s;">+</div>
+</div>
+<div data-acc-body style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s;">
+<div style="padding:0 4px 30px 98px;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(300px,1.5fr);gap:34px;align-items:start;">
+<div style="border-left:1px solid rgba(255,255,255,.12);padding-left:18px;">
+<div style="font:600 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">Today</div>
+<p style="font:400 14.5px/1.7 'Geist';color:#8C99AD;margin:0;">Nothing proves what model ran, what data it consumed, what it cost, or whether it was the model advertised. The client trusts the provider completely.</p>
+</div>
+<div style="border-left:1px solid rgba(71,199,138,.45);padding-left:18px;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">On Lumera</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;"><div style="border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:16px;background:#04193A;"><div style="font:600 14px 'Geist';color:#FFFFFF;">Global Credits</div><div style="font:400 13px/1.55 'Geist';color:#96A2B6;margin-top:6px;">Fund once. Provider-agnostic.</div></div><div style="border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:16px;background:#04193A;"><div style="font:600 14px 'Geist';color:#FFFFFF;">Per-Turn Acknowledgment</div><div style="font:400 13px/1.55 'Geist';color:#96A2B6;margin-top:6px;">Only accepted turns are billable.</div></div><div style="border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:16px;background:#04193A;"><div style="font:600 14px 'Geist';color:#FFFFFF;">Transcript Fingerprints</div><div style="font:400 13px/1.55 'Geist';color:#96A2B6;margin-top:6px;">Verifiable in dispute, never in plaintext.</div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:78px 1fr 34px;gap:20px;align-items:start;padding:26px 4px;cursor:pointer;">
+<div><div data-accent-fg style="font:700 22px 'Geist';color:#47C78A;">03</div><div style="font:500 9.5px/1.35 'Geist Mono';color:#8C99AD;text-transform:uppercase;letter-spacing:.13em;margin-top:5px;">Cascade · AetherDB</div></div>
+<div>
+<div style="display:inline-flex;align-items:center;gap:7px;margin-bottom:7px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;flex:0 0 auto;"></span><span style="font:500 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">No durable memory</span></div>
+<div style="font:600 clamp(18px,1.9vw,23px)/1.25 'Geist';color:#FFFFFF;">Durable Memory</div>
+<div style="font:400 15px/1.55 'Geist';color:#96A2B6;margin:6px 0 0;">Memory that survives switching providers.</div>
+</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .3s;">+</div>
+</div>
+<div data-acc-body style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s;">
+<div style="padding:0 4px 30px 98px;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(300px,1.5fr);gap:34px;align-items:start;">
+<div style="border-left:1px solid rgba(255,255,255,.12);padding-left:18px;">
+<div style="font:600 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">Today</div>
+<p style="font:400 14.5px/1.7 'Geist';color:#8C99AD;margin:0;">Agent state lives in provider-controlled databases. Switch providers, lose context. No memory the agent owns, no institutional knowledge that accumulates, no data sovereignty.</p>
+</div>
+<div style="border-left:1px solid rgba(71,199,138,.45);padding-left:18px;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">On Lumera</div>
+<p style="font:400 15px/1.7 'Geist';color:#96A2B6;margin:0;">Cascade is content-addressed erasure-coded storage with BLAKE3 Merkle proofs. AetherDB is a leaderless quorum-replicated database for hot state. Large values overflow from one to the other transparently.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;"><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">ONE / QUORUM</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Vector clocks</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Hinted handoff</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Anti-entropy repair</span><span style="font:500 11px 'Geist Mono';color:#C3CBD9;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;">Signed write receipts</span></div>
+</div>
+</div>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:78px 1fr 34px;gap:20px;align-items:start;padding:26px 4px;cursor:pointer;">
+<div><div data-accent-fg style="font:700 22px 'Geist';color:#47C78A;">04</div><div style="font:500 9.5px/1.35 'Geist Mono';color:#8C99AD;text-transform:uppercase;letter-spacing:.13em;margin-top:5px;">LUME · Everlight</div></div>
+<div>
+<div style="display:inline-flex;align-items:center;gap:7px;margin-bottom:7px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;flex:0 0 auto;"></span><span style="font:500 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">No native settlement</span></div>
+<div style="font:600 clamp(18px,1.9vw,23px)/1.25 'Geist';color:#FFFFFF;">Economic Coordination</div>
+<div style="font:400 15px/1.55 'Geist';color:#96A2B6;margin:6px 0 0;">Someone has to pay for permanence, not just usage.</div>
+</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .3s;">+</div>
+</div>
+<div data-acc-body style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s;">
+<div style="padding:0 4px 30px 98px;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(300px,1.5fr);gap:34px;align-items:start;">
+<div style="border-left:1px solid rgba(255,255,255,.12);padding-left:18px;">
+<div style="font:600 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">Today</div>
+<p style="font:400 14.5px/1.7 'Geist';color:#8C99AD;margin:0;">Payment rails assume a human at the end. An agent cannot hold a balance, earn revenue, or settle a transaction on its own behalf.</p>
+</div>
+<div style="border-left:1px solid rgba(71,199,138,.45);padding-left:18px;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">On Lumera</div>
+<p style="font:400 15px/1.7 'Geist';color:#96A2B6;margin:0;">LUME is the settlement, staking and governance token. Everlight funds what per-use fees cannot: an artifact that must stay available for years, a verifier ready before it is needed, a node paid for capacity.</p>
+<a href="#token" data-nav="token" style="display:inline-block;font:600 14px 'Geist';color:#47C78A;border-bottom:1px solid rgba(71,199,138,.4);padding-bottom:2px;margin-top:14px;">See the token model →</a>
+</div>
+</div>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:78px 1fr 34px;gap:20px;align-items:start;padding:26px 4px;cursor:pointer;">
+<div><div data-accent-fg style="font:700 22px 'Geist';color:#47C78A;">05</div><div style="font:500 9.5px/1.35 'Geist Mono';color:#8C99AD;text-transform:uppercase;letter-spacing:.13em;margin-top:5px;">Councils · Packs</div></div>
+<div>
+<div style="display:inline-flex;align-items:center;gap:7px;margin-bottom:7px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;flex:0 0 auto;"></span><span style="font:500 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">No verifiable workflows</span></div>
+<div style="font:600 clamp(18px,1.9vw,23px)/1.25 'Geist';color:#FFFFFF;">Composable Intelligence</div>
+<div style="font:400 15px/1.55 'Geist';color:#96A2B6;margin:6px 0 0;">Workflows a second node re-runs to check.</div>
+</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .3s;">+</div>
+</div>
+<div data-acc-body style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s;">
+<div style="padding:0 4px 30px 98px;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(300px,1.5fr);gap:34px;align-items:start;">
+<div style="border-left:1px solid rgba(255,255,255,.12);padding-left:18px;">
+<div style="font:600 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">Today</div>
+<p style="font:400 14.5px/1.7 'Geist';color:#8C99AD;margin:0;">A multi-step job is a black box. You either trust the whole chain or none of it, and there is no universal way to check whether a workflow is reliable.</p>
+</div>
+<div style="border-left:1px solid rgba(71,199,138,.45);padding-left:18px;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.18em;margin-bottom:9px;">On Lumera</div>
+<p style="font:400 15px/1.7 'Geist';color:#96A2B6;margin:0;">Packs are content-addressed workflow bundles registered on-chain. The hash guarantees the workflow that ran is the workflow that was registered. Councils govern who may invoke them.</p>
+<p style="font:400 14px/1.65 'Geist';color:#C3CBD9;margin:14px 0 0;"><strong style="color:#FFFFFF;font-weight:600;">Runner + Verifier.</strong> A runner executes; an independent verifier replays deterministic steps. Payment depends on lifecycle completion, never on subjective quality.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-anchor="thesis" style="padding:0 44px 100px;max-width:1180px;margin:0 auto;">
+<div style="border-left:2px solid #47C78A;padding:6px 0 6px 28px;max-width:860px;">
+<p style="font:600 clamp(22px,2.6vw,32px)/1.35 'Geist';letter-spacing:-.02em;color:#FFFFFF;margin:0;">Lumera is where agent work becomes checkable: permanent memory, an identity the agent owns, a receipt for everything that ran, and settlement that clears in one place.</p>
+</div>
+</section>
+
+<section data-anchor="authority" style="padding:70px 44px 110px;max-width:1180px;margin:0 auto;">
+<div data-accent-fg style="font:600 11px 'Geist Mono';letter-spacing:.22em;color:#47C78A;text-transform:uppercase;">Authority boundaries</div>
+<h2 data-reveal-head style="font:700 clamp(26px,3vw,38px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;max-width:660px;margin:16px 0 12px;">Model confidence never becomes protocol truth.</h2>
+<p style="font:400 16px/1.65 'Geist';color:#96A2B6;max-width:600px;margin:0 0 30px;">Three classes of execution, three consequences when something goes wrong. They never collapse into each other.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;"><div data-row data-stagger="0" style="border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:24px;background:#03204A;transition:transform 260ms ease,border-color 260ms ease;" style-hover="transform:translateY(-3px);border-color:rgba(71,199,138,.5)"><div style="font:600 17px 'Geist';color:#FFFFFF;letter-spacing:-.01em;">Reasoning</div><div style="height:1px;background:rgba(255,255,255,.09);margin:16px 0 18px;"></div><div style="position:relative;padding:0 0 18px 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="position:absolute;left:4px;top:15px;bottom:2px;width:1px;background:rgba(255,255,255,.12);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Example</div><div style="font:400 13.5px/1.5 'Geist';color:#F5F5FA;margin-top:5px;">A model analyses a contract</div></div><div style="position:relative;padding:0 0 18px 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="position:absolute;left:4px;top:15px;bottom:2px;width:1px;background:rgba(255,255,255,.12);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Check</div><div style="font:400 13.5px/1.5 'Geist';color:#F5F5FA;margin-top:5px;">No replay is possible, so output is advisory</div></div><div style="position:relative;padding:0 0 0 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Consequence</div><div style="display:inline-flex;align-items:center;gap:7px;margin-top:7px;border:1px solid rgba(255,255,255,.2);background:transparent;border-radius:999px;padding:6px 13px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;"></span><span style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#C3CBD9;">Reputation only</span></div></div><p style="font:400 12.5px/1.55 'Geist';color:#8693A8;margin:16px 0 0;">Quality moves the trust graph. Nothing is slashed.</p></div><div data-row data-stagger="1" style="border:1px solid rgba(71,199,138,.32);border-radius:14px;padding:24px;background:linear-gradient(165deg,rgba(71,199,138,.1),rgba(7,138,138,.02));transition:transform 260ms ease,border-color 260ms ease;" style-hover="transform:translateY(-3px);border-color:rgba(71,199,138,.5)"><div style="font:600 17px 'Geist';color:#FFFFFF;letter-spacing:-.01em;">Deterministic compute</div><div style="height:1px;background:rgba(255,255,255,.09);margin:16px 0 18px;"></div><div style="position:relative;padding:0 0 18px 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="position:absolute;left:4px;top:15px;bottom:2px;width:1px;background:rgba(255,255,255,.12);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Example</div><div style="font:400 13.5px/1.5 'Geist';color:#F5F5FA;margin-top:5px;">A pack transforms data</div></div><div style="position:relative;padding:0 0 18px 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="position:absolute;left:4px;top:15px;bottom:2px;width:1px;background:rgba(255,255,255,.12);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Check</div><div style="font:400 13.5px/1.5 'Geist';color:#F5F5FA;margin-top:5px;">A second node replays it</div></div><div style="position:relative;padding:0 0 0 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Consequence</div><div style="display:inline-flex;align-items:center;gap:7px;margin-top:7px;border:1px solid rgba(71,199,138,.6);background:rgba(71,199,138,.16);border-radius:999px;padding:6px 13px;"><span style="width:5px;height:5px;border-radius:50%;background:#47C78A;"></span><span style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#FFFFFF;">Slashable</span></div></div><p style="font:400 12.5px/1.55 'Geist';color:#8693A8;margin:16px 0 0;">If runner and verifier disagree, that is objective evidence. No judgement needed.</p></div><div data-row data-stagger="2" style="border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:24px;background:#03204A;transition:transform 260ms ease,border-color 260ms ease;" style-hover="transform:translateY(-3px);border-color:rgba(71,199,138,.5)"><div style="font:600 17px 'Geist';color:#FFFFFF;letter-spacing:-.01em;">Effects</div><div style="height:1px;background:rgba(255,255,255,.09);margin:16px 0 18px;"></div><div style="position:relative;padding:0 0 18px 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="position:absolute;left:4px;top:15px;bottom:2px;width:1px;background:rgba(255,255,255,.12);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Example</div><div style="font:400 13.5px/1.5 'Geist';color:#F5F5FA;margin-top:5px;">A transaction is proposed</div></div><div style="position:relative;padding:0 0 18px 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="position:absolute;left:4px;top:15px;bottom:2px;width:1px;background:rgba(255,255,255,.12);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Check</div><div style="font:400 13.5px/1.5 'Geist';color:#F5F5FA;margin-top:5px;">Returned as a signed plan</div></div><div style="position:relative;padding:0 0 0 22px;"><div style="position:absolute;left:0;top:4px;width:9px;height:9px;border-radius:50%;background:#04193A;border:1px solid rgba(71,199,138,.55);"></div><div style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#8693A8;">Consequence</div><div style="display:inline-flex;align-items:center;gap:7px;margin-top:7px;border:1px solid rgba(255,255,255,.2);background:transparent;border-radius:999px;padding:6px 13px;"><span style="width:5px;height:5px;border-radius:50%;background:#8693A8;"></span><span style="font:500 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.14em;color:#C3CBD9;">App validates</span></div></div><p style="font:400 12.5px/1.55 'Geist';color:#8693A8;margin:16px 0 0;">The protocol never fires an irreversible action on its own.</p></div></div>
+</section>
+
+
+
+
+
+
+
+
+
+<section style="padding:96px 44px 110px;text-align:center;background:radial-gradient(circle at 50% 120%,rgba(71,199,138,.18),transparent 62%);border-top:1px solid rgba(255,255,255,.09);">
+<h2 data-reveal-head style="font:800 clamp(28px,3.6vw,46px)/1.08 'Geist';letter-spacing:-.03em;color:#FFFFFF;max-width:760px;margin:0 auto;">Build where work is provable.</h2>
+<div style="display:flex;gap:12px;justify-content:center;margin-top:32px;flex-wrap:wrap;"><a href="#build" data-nav="build" data-magnetic data-accent-bg style="font:600 14.5px 'Geist';color:#001432;background:#47C78A;padding:15px 28px;border-radius:10px;">Start building →</a><a href="#roadmap" data-nav="roadmap" data-magnetic style="font:600 14.5px 'Geist';color:#F5F5FA;border:1px solid rgba(255,255,255,.22);padding:15px 28px;border-radius:10px;">See the roadmap</a></div>
+</section>
+</div>
+
+
+<!-- ================= TOKEN ================= -->

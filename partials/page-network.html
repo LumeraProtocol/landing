@@ -1,0 +1,315 @@
+<div data-page="network" data-screen-label="Network" style="display:none;">
+<section style="padding:150px 44px 70px;max-width:1180px;margin:0 auto;">
+<div data-accent-fg style="font:600 11px 'Geist Mono';letter-spacing:.22em;color:#47C78A;text-transform:uppercase;">Network</div>
+<h1 data-reveal-head style="font:800 clamp(40px,5.4vw,72px)/1.02 'Geist';letter-spacing:-.03em;color:#FFFFFF;max-width:820px;margin:18px 0 0;">Two roles run the network.</h1>
+<p style="font:400 19px/1.6 'Geist';color:#C3CBD9;max-width:640px;margin:22px 0 0;">Validators secure the chain. SuperNodes run the services. They are separate on purpose, because consensus should never depend on who is serving a file.</p>
+</section>
+
+<section style="padding:20px 44px 80px;max-width:1180px;margin:0 auto;">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px;align-items:stretch;">
+<div data-row style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:32px 30px 26px;background:linear-gradient(168deg,rgba(255,255,255,.035),rgba(255,255,255,0) 55%),#03204A;">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;">
+<div>
+<div data-accent-fg style="font:600 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.2em;color:#47C78A;">Consensus layer</div>
+<div style="font:700 clamp(23px,2.5vw,31px) 'Geist';color:#FFFFFF;margin-top:9px;letter-spacing:-.025em;">Validators</div>
+</div>
+<div style="text-align:right;flex:0 0 auto;">
+<div style="font:700 clamp(30px,3.4vw,44px)/1 'Geist';color:#FFFFFF;letter-spacing:-.035em;"><span data-count="50">50</span></div>
+<div style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;margin-top:7px;">in the active set</div>
+</div>
+</div>
+<p style="font:400 15.5px/1.65 'Geist';color:#C3CBD9;margin:18px 0 4px;">They agree on what happened and in what order. Nothing else.</p>
+<div style="font:400 11px 'Geist Mono';color:#8693A8;margin:0 0 22px;text-transform:uppercase;letter-spacing:.12em;">Fixed set, elected by stake</div>
+<div style="margin-top:auto;">
+<div style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;padding-bottom:6px;">Responsible for</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.3);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Block production and finality</span>
+</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.3);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Transaction ordering and inclusion</span>
+</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.3);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Chain security through staked LUME</span>
+</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.3);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Governance execution</span>
+</div>
+</div>
+</div>
+<div data-row style="display:flex;flex-direction:column;border:1px solid rgba(71,199,138,.34);border-radius:18px;padding:32px 30px 26px;background:radial-gradient(120% 90% at 100% 0%,rgba(71,199,138,.17),transparent 62%),linear-gradient(168deg,rgba(71,199,138,.07),rgba(7,138,138,.02));">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;">
+<div>
+<div data-accent-fg style="font:600 9.5px 'Geist Mono';text-transform:uppercase;letter-spacing:.2em;color:#47C78A;">Service layer</div>
+<div style="font:700 clamp(23px,2.5vw,31px) 'Geist';color:#FFFFFF;margin-top:9px;letter-spacing:-.025em;">SuperNodes</div>
+</div>
+<div style="text-align:right;flex:0 0 auto;">
+<div style="font:700 clamp(30px,3.4vw,44px)/1 'Geist';color:#FFFFFF;letter-spacing:-.035em;"><span data-count="128">128</span></div>
+<div style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;margin-top:7px;">running today</div>
+</div>
+</div>
+<p style="font:400 15.5px/1.65 'Geist';color:#C3CBD9;margin:18px 0 4px;">They do the actual work. The chain only records commitments about it.</p>
+<div style="font:400 11px 'Geist Mono';color:#8693A8;margin:0 0 22px;text-transform:uppercase;letter-spacing:.12em;">Permissionless, bonded</div>
+<div style="margin-top:auto;">
+<div style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.18em;padding-bottom:6px;">Responsible for</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(71,199,138,.75);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Cascade storage, serving and repair</span>
+</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(71,199,138,.75);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Agent sessions and inference</span>
+</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(71,199,138,.75);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Deterministic pack execution and verification</span>
+</div>
+<div style="display:grid;grid-template-columns:5px 1fr;gap:13px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+<span style="width:5px;height:5px;border-radius:50%;background:rgba(71,199,138,.75);position:relative;top:-3px;"></span>
+<span style="font:400 14px/1.55 'Geist';color:#DDE3EC;">Trust graph indexing and queries</span>
+</div>
+</div>
+</div>
+</div>
+
+<div data-row style="margin-top:18px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#03204A;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));overflow:hidden;">
+<div style="padding:26px 28px;">
+<div data-accent-fg style="font:600 9.5px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.2em;">Both slashable</div>
+<div style="font:600 16.5px/1.4 'Geist';color:#FFFFFF;margin-top:11px;">Same stake at risk, different failure.</div>
+</div>
+<div style="padding:26px 28px;border-left:1px solid rgba(255,255,255,.09);">
+<div style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">A validator is slashed for</div>
+<div style="font:400 15px/1.55 'Geist';color:#DDE3EC;margin-top:10px;">Consensus faults, such as double signing or going dark.</div>
+</div>
+<div style="padding:26px 28px;border-left:1px solid rgba(255,255,255,.09);">
+<div style="font:500 9.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">A SuperNode is slashed for</div>
+<div style="font:400 15px/1.55 'Geist';color:#DDE3EC;margin-top:10px;">Service faults, such as a deterministic mismatch or a forged receipt.</div>
+</div>
+</div>
+</section>
+
+<section style="padding:0 44px 70px;max-width:1180px;margin:0 auto;">
+<div style="margin-bottom:22px;">
+<div data-accent-fg style="font:600 11px 'Geist Mono';letter-spacing:.22em;color:#47C78A;text-transform:uppercase;">How work becomes a record</div>
+<h2 data-reveal-head style="font:700 clamp(24px,2.8vw,36px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;margin:14px 0 0;max-width:620px;">The two roles, in the order they act.</h2>
+</div>
+<div data-row style="position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.09);background:radial-gradient(90% 80% at 50% 0%,rgba(71,199,138,.08),transparent 66%),#03204A;padding:30px 28px;">
+
+<div style="display:grid;grid-template-columns:104px 1fr;gap:26px;align-items:start;padding:0 0 26px;border-bottom:1px solid rgba(255,255,255,.08);">
+<div>
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;letter-spacing:-.02em;">01</div>
+<div style="font:600 13px/1.3 'Geist';color:#FFFFFF;margin-top:7px;">SuperNodes do the work</div>
+<div style="font:400 11px/1.45 'Geist Mono';color:#8693A8;margin-top:6px;">Open set · 128 running</div>
+</div>
+<div><div style="display:flex;gap:10px;flex-wrap:wrap;">
+<div style="position:relative;flex:1 1 0;min-width:0;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:#04193A;padding:15px 14px;">
+<div style="font:600 13.5px 'Geist';color:#F5F5FA;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Storage</div>
+<div style="font:400 11.5px/1.4 'Geist';color:#8693A8;margin-top:4px;">Keeps files safe</div>
+<span style="position:absolute;left:50%;bottom:-5px;width:7px;height:7px;border-radius:50%;background:#47C78A;margin-left:-3.5px;animation:receiptDown 3.6s linear 0s infinite;"></span>
+</div>
+<div style="position:relative;flex:1 1 0;min-width:0;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:#04193A;padding:15px 14px;">
+<div style="font:600 13.5px 'Geist';color:#F5F5FA;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Sessions</div>
+<div style="font:400 11.5px/1.4 'Geist';color:#8693A8;margin-top:4px;">Runs the agent</div>
+<span style="position:absolute;left:50%;bottom:-5px;width:7px;height:7px;border-radius:50%;background:#47C78A;margin-left:-3.5px;animation:receiptDown 3.6s linear 0.9s infinite;"></span>
+</div>
+<div style="position:relative;flex:1 1 0;min-width:0;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:#04193A;padding:15px 14px;">
+<div style="font:600 13.5px 'Geist';color:#F5F5FA;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Memory</div>
+<div style="font:400 11.5px/1.4 'Geist';color:#8693A8;margin-top:4px;">Holds live state</div>
+<span style="position:absolute;left:50%;bottom:-5px;width:7px;height:7px;border-radius:50%;background:#47C78A;margin-left:-3.5px;animation:receiptDown 3.6s linear 1.8s infinite;"></span>
+</div>
+<div style="position:relative;flex:1 1 0;min-width:0;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:#04193A;padding:15px 14px;">
+<div style="font:600 13.5px 'Geist';color:#F5F5FA;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Compute</div>
+<div style="font:400 11.5px/1.4 'Geist';color:#8693A8;margin-top:4px;">Runs and checks work</div>
+<span style="position:absolute;left:50%;bottom:-5px;width:7px;height:7px;border-radius:50%;background:#47C78A;margin-left:-3.5px;animation:receiptDown 3.6s linear 2.7s infinite;"></span>
+</div>
+</div></div>
+</div>
+
+<div style="display:grid;grid-template-columns:104px 1fr;gap:26px;align-items:start;padding:26px 0 26px;border-bottom:1px solid rgba(255,255,255,.08);">
+<div>
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;letter-spacing:-.02em;">02</div>
+<div style="font:600 13px/1.3 'Geist';color:#FFFFFF;margin-top:7px;">Each step emits a receipt</div>
+<div style="font:400 11px/1.45 'Geist Mono';color:#8693A8;margin-top:6px;">Signed by the node that did it</div>
+</div>
+<div><div style="position:relative;height:56px;display:flex;align-items:center;">
+<div style="position:absolute;left:0;right:0;top:50%;height:1px;background:repeating-linear-gradient(to right,rgba(71,199,138,.5) 0 7px,transparent 7px 15px);"></div>
+<div style="position:relative;margin:0 auto;background:#03204A;padding:0 14px;font:500 10.5px 'Geist Mono';color:#C3CBD9;text-transform:uppercase;letter-spacing:.16em;">Signed receipt ↓</div>
+</div></div>
+</div>
+
+<div style="display:grid;grid-template-columns:104px 1fr;gap:26px;align-items:start;padding:26px 0 26px;border-bottom:1px solid rgba(255,255,255,.08);">
+<div>
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;letter-spacing:-.02em;">03</div>
+<div style="font:600 13px/1.3 'Geist';color:#FFFFFF;margin-top:7px;">Validators order and finalise</div>
+<div style="font:400 11px/1.45 'Geist Mono';color:#8693A8;margin-top:6px;">Fixed set · 50 validators</div>
+</div>
+<div><div style="display:flex;align-items:flex-end;gap:3px;height:20px;"><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.00s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.06s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.11s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.17s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.22s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.28s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.33s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.39s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.44s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.49s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.55s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.60s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.66s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.71s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.77s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.82s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.88s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.94s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 0.99s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.04s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.10s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.16s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.21s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.26s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.32s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.38s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.43s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.49s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.54s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.59s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.65s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.71s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.76s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.81s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.87s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.93s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 1.98s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.04s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.09s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.15s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.20s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.25s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.31s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.37s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.42s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.48s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.53s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.58s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.64s infinite;"></span><span style="flex:1 1 0;min-width:2px;height:13px;border-radius:2px;background:rgba(255,255,255,.16);animation:vPulse 3.4s ease-in-out 2.69s infinite;"></span></div>
+<div style="font:400 11.5px 'Geist';color:#8693A8;margin-top:10px;">They agree what happened and in what order. They never do the work themselves.</div></div>
+</div>
+
+<div style="display:grid;grid-template-columns:104px 1fr;gap:26px;align-items:start;padding:26px 0 0;">
+<div>
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;letter-spacing:-.02em;">04</div>
+<div style="font:600 13px/1.3 'Geist';color:#FFFFFF;margin-top:7px;">It becomes the permanent record</div>
+<div style="font:400 11px/1.45 'Geist Mono';color:#8693A8;margin-top:6px;">One block every 1.9s</div>
+</div>
+<div><div style="position:relative;">
+<div style="display:flex;align-items:center;-webkit-mask-image:linear-gradient(to right,transparent,#000 12%);mask-image:linear-gradient(to right,transparent,#000 12%);"><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 0.00s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 0.35s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 0.70s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 1.05s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 1.40s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 1.75s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.5);background:rgba(71,199,138,.13);animation:blockIn 2.8s linear 2.10s infinite;"></span><span style="flex:0 0 auto;width:9px;height:1px;background:rgba(71,199,138,.45);"></span><span style="flex:0 0 auto;width:42px;height:32px;border-radius:7px;border:1px solid rgba(71,199,138,.85);background:rgba(71,199,138,.24);box-shadow:0 0 18px -2px rgba(71,199,138,.55);animation:blockIn 2.8s linear 2.45s infinite;"></span></div>
+<div style="display:flex;align-items:baseline;gap:8px;margin-top:11px;">
+<span style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Newest block</span>
+<span style="font:600 12px 'Geist Mono';color:#C3CBD9;">#2,841,902</span>
+</div>
+</div>
+<div style="font:400 11.5px 'Geist';color:#8693A8;margin-top:12px;">Come back in a year and the receipt is still there, and so is the thing it points at.</div></div>
+</div>
+
+</div>
+</section>
+
+<section style="padding:40px 44px 70px;max-width:1180px;margin:0 auto;">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:34px;">
+<h2 data-reveal-head style="font:700 clamp(24px,2.8vw,36px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;margin:0;">Network at a glance.</h2>
+<a href="https://explorer.lumera.io/" style="display:inline-flex;align-items:center;gap:8px;font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;"><span data-accent-bg style="width:6px;height:6px;border-radius:50%;background:#47C78A;animation:pulseDot 2s infinite;"></span>Live from the explorer →</a>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.14);">
+<div data-row style="padding:0 26px 0 0;">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">Total transactions</div>
+<div style="font:700 clamp(34px,4.4vw,58px)/1 'Geist';color:#FFFFFF;margin-top:12px;letter-spacing:-.035em;"><span data-count="48200000">48200000</span></div>
+<div style="font:400 12px 'Geist Mono';color:#8693A8;margin-top:9px;">Since genesis</div>
+</div>
+<div data-row style="padding:0 26px 0 0;">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">Active SuperNodes</div>
+<div style="font:700 clamp(34px,4.4vw,58px)/1 'Geist';color:#FFFFFF;margin-top:12px;letter-spacing:-.035em;"><span data-count="128">128</span></div>
+<div style="font:400 12px 'Geist Mono';color:#8693A8;margin-top:9px;">Across 31 countries</div>
+</div>
+<div data-row style="padding:0 26px 0 0;">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">Retention proofs passed</div>
+<div style="font:700 clamp(34px,4.4vw,58px)/1 'Geist';color:#FFFFFF;margin-top:12px;letter-spacing:-.035em;"><span data-count="99.98" data-decimals="2">99.98</span>%</div>
+<div style="font:400 12px 'Geist Mono';color:#8693A8;margin-top:9px;">Rolling 30 days</div>
+</div>
+</div>
+
+<div data-row style="display:grid;grid-template-columns:132px 1fr;gap:0;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.09);">
+<div><div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.2em;">Cascade</div></div>
+<div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+<div style="font:600 16px 'Geist';color:#FFFFFF;">412 TB committed of 2.4 PB total capacity</div>
+<div style="font:500 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">17% used</div>
+</div>
+<div style="margin-top:14px;height:6px;border-radius:3px;background:rgba(255,255,255,.09);overflow:hidden;">
+<div data-accent-bg style="width:17%;height:100%;border-radius:3px;background:#47C78A;"></div>
+</div>
+<div style="font:400 11.5px 'Geist Mono';color:#8693A8;margin-top:11px;">2.1M objects stored, each one re-proved on a rolling challenge</div>
+</div>
+</div>
+
+<div data-row style="display:grid;grid-template-columns:132px 1fr;gap:0;border-top:1px solid rgba(255,255,255,.14);">
+<div style="padding:22px 18px 22px 0;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.2em;">Chain</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));border-left:1px solid rgba(255,255,255,.09);">
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Block height</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;"><span data-count="2841902">2841902</span></div>
+
+</div>
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Block time</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">1.9s</div>
+
+</div>
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Active validators</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;"><span data-count="50">50</span></div>
+<div style="font:400 10.5px 'Geist Mono';color:#8693A8;margin-top:5px;">Fixed active set</div>
+</div>
+<div data-row style="padding:20px 22px;">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Sessions · 24h</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;"><span data-count="18400">18400</span></div>
+
+</div>
+</div>
+</div>
+<div data-row style="display:grid;grid-template-columns:132px 1fr;gap:0;border-top:1px solid rgba(255,255,255,.14);">
+<div style="padding:22px 18px 22px 0;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.2em;">Token</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));border-left:1px solid rgba(255,255,255,.09);">
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Total supply</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">1.0B</div>
+
+</div>
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Circulating</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">412M</div>
+
+</div>
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Bonded</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">41.2%</div>
+
+</div>
+<div data-row style="padding:20px 22px;">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Staking APR</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">11.4%</div>
+
+</div>
+</div>
+</div>
+<div data-row style="display:grid;grid-template-columns:132px 1fr;gap:0;border-top:1px solid rgba(255,255,255,.14);">
+<div style="padding:22px 18px 22px 0;">
+<div data-accent-fg style="font:600 10px 'Geist Mono';color:#47C78A;text-transform:uppercase;letter-spacing:.2em;">Economics</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));border-left:1px solid rgba(255,255,255,.09);">
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">LUME settled · 30d</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">1.24M</div>
+
+</div>
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Everlight pool</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">8.6M</div>
+<div style="font:400 10.5px 'Geist Mono';color:#8693A8;margin-top:5px;">Funds retention</div>
+</div>
+<div data-row style="padding:20px 22px;border-right:1px solid rgba(255,255,255,.09);">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Uptime · 30d</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;">99.94%</div>
+
+</div>
+<div data-row style="padding:20px 22px;">
+<div style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.14em;">Countries</div>
+<div style="font:700 clamp(18px,1.9vw,24px) 'Geist';color:#FFFFFF;margin-top:8px;letter-spacing:-.02em;"><span data-count="31">31</span></div>
+
+</div>
+</div>
+</div>
+
+<p style="font:400 11.5px/1.6 'Geist Mono';color:#8693A8;margin:30px 0 0;max-width:640px;">Every figure on this page is a placeholder. Wire this block to the explorer API before launch. Do not publish invented network data.</p>
+</section>
+
+<section style="padding:0 44px 100px;max-width:1180px;margin:0 auto;">
+<div data-accent-fg style="font:600 11px 'Geist Mono';letter-spacing:.22em;color:#47C78A;text-transform:uppercase;">Everlight</div>
+<h2 data-reveal-head style="font:700 clamp(26px,3vw,40px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;max-width:700px;margin:16px 0 12px;">Permanence funded, not promised.</h2>
+<p style="font:400 16px/1.7 'Geist';color:#96A2B6;max-width:640px;margin:0 0 30px;">A stored artifact must remain available for years. A verifier must be ready before it is needed. An operator must be paid for capacity, not only utilisation. Everlight is the economic floor under all five pillars.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;">
+<div data-row style="border-top:1px solid rgba(255,255,255,.14);padding:22px 20px 22px 0;"><div style="font:600 16px 'Geist';color:#FFFFFF;">Retention pool</div><p style="font:400 13.5px/1.55 'Geist';color:#96A2B6;margin:8px 0 0;">Funded by block rewards, fee shares and endowment yield.</p></div>
+<div data-row style="border-top:1px solid rgba(255,255,255,.14);padding:22px 20px 22px 0;"><div style="font:600 16px 'Geist';color:#FFFFFF;">Epoch distribution</div><p style="font:400 13.5px/1.55 'Geist';color:#96A2B6;margin:8px 0 0;">Regular, predictable compensation for retained obligations.</p></div>
+<div data-row style="border-top:1px solid rgba(255,255,255,.14);padding:22px 20px 22px 0;"><div style="font:600 16px 'Geist';color:#FFFFFF;">Capacity-aware states</div><p style="font:400 13.5px/1.55 'Geist';color:#96A2B6;margin:8px 0 0;">Pay reflects readiness and capacity, not just usage.</p></div>
+<div data-row style="border-top:1px solid rgba(255,255,255,.14);padding:22px 20px 22px 0;"><div style="font:600 16px 'Geist';color:#FFFFFF;">Endowments</div><p style="font:400 13.5px/1.55 'Geist';color:#96A2B6;margin:8px 0 0;">The final stage: principal-preserving funds whose yield will sustain retention indefinitely.</p></div>
+</div>
+</section>
+
+<section style="padding:0 44px 110px;max-width:1180px;margin:0 auto;">
+<div style="border:1px solid rgba(71,199,138,.32);border-radius:16px;padding:40px;background:linear-gradient(160deg,rgba(71,199,138,.1),rgba(7,138,138,.03));display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;">
+<div><h2 style="font:700 clamp(24px,2.6vw,34px)/1.15 'Geist';letter-spacing:-.02em;color:#FFFFFF;margin:0;">Run a SuperNode.</h2><p style="font:400 15px/1.6 'Geist';color:#C3CBD9;margin:10px 0 0;max-width:520px;">Bond LUME, serve the network, earn from settlement and retention.</p></div>
+<a href="https://github.com/LumeraProtocol/lumera-networks" data-magnetic data-accent-bg style="font:600 14.5px 'Geist';color:#001432;background:#47C78A;padding:15px 26px;border-radius:10px;white-space:nowrap;">Operator guide →</a>
+</div>
+</section>
+</div>
+
+<!-- ================= ROADMAP ================= -->

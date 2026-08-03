@@ -1,0 +1,128 @@
+<div data-page="memory" data-screen-label="Memory" style="display:none;">
+<section style="padding:150px 44px 60px;max-width:1180px;margin:0 auto;">
+<div data-accent-fg style="font:600 11px 'Geist Mono';letter-spacing:.22em;color:#47C78A;text-transform:uppercase;">Agent memory</div>
+<h1 data-reveal-head style="font:800 clamp(40px,5.4vw,72px)/1.02 'Geist';letter-spacing:-.03em;color:#FFFFFF;max-width:860px;margin:18px 0 0;">A memory your agent can prove.</h1>
+<p style="font:400 19px/1.6 'Geist';color:#C3CBD9;max-width:680px;margin:24px 0 0;">Stored once, readable from any framework, and still provably there in ten years.</p>
+</section>
+
+<section style="padding:20px 44px 90px;max-width:1180px;margin:0 auto;">
+<div style="max-width:680px;">
+<p style="font:400 17px/1.75 'Geist';color:#C3CBD9;margin:0 0 18px;">An agent that forgets is a demo. Every session starts from nothing, the same context gets re-sent and re-paid for, and anything the agent learned about a customer last week is gone.</p>
+<p style="font:400 17px/1.75 'Geist';color:#C3CBD9;margin:0 0 18px;">The memory that does exist usually sits in a database on someone else's account. It can be deleted, it can be lost in a migration, and there is no way to show a third party that a record has not been quietly edited.</p>
+<p style="font:400 17px/1.75 'Geist';color:#C3CBD9;margin:0;">Lumera stores each fact once, ties it to an identity the agent owns rather than to a vendor account, and keeps re-proving that the data is still held. Your agent reads and writes through an SDK. There is no wallet, no gas and no chain to learn.</p>
+</div>
+</section>
+
+<section style="padding:0 44px 100px;max-width:1180px;margin:0 auto;">
+<h2 data-reveal-head style="font:700 clamp(26px,3vw,38px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;margin:0 0 30px;">How it works</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+<div data-row data-stagger="0" style="border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:28px 26px;background:#03204A;">
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;">01</div>
+<div style="font:600 19px 'Geist';color:#FFFFFF;margin-top:14px;">Store once</div>
+<p style="font:400 14.5px/1.65 'Geist';color:#96A2B6;margin:9px 0 0;">Pay once and the fact is kept. There is no renewal to forget and no bill that grows with age.</p>
+</div>
+<div data-row data-stagger="1" style="border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:28px 26px;background:#03204A;">
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;">02</div>
+<div style="font:600 19px 'Geist';color:#FFFFFF;margin-top:14px;">Prove it</div>
+<p style="font:400 14.5px/1.65 'Geist';color:#96A2B6;margin:9px 0 0;">The network keeps re-proving that the data is still held, continuously, and anyone can check the result.</p>
+</div>
+<div data-row data-stagger="2" style="border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:28px 26px;background:#03204A;">
+<div data-accent-fg style="font:700 20px 'Geist';color:#47C78A;">03</div>
+<div style="font:600 19px 'Geist';color:#FFFFFF;margin-top:14px;">Take it anywhere</div>
+<p style="font:400 14.5px/1.65 'Geist';color:#96A2B6;margin:9px 0 0;">Memory belongs to the agent identity, not to a vendor. Switch model, switch framework, keep the memory.</p>
+</div>
+</div>
+</section>
+
+<section style="padding:0 44px 100px;max-width:1180px;margin:0 auto;">
+<h2 data-reveal-head style="font:700 clamp(26px,3vw,38px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;margin:0 0 26px;">Three calls, start to finish</h2>
+<div data-row style="border:1px solid rgba(255,255,255,.09);border-radius:16px;overflow:hidden;background:#03204A;max-width:820px;">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 18px;border-bottom:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);">
+<span style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">store · recall · prove</span>
+<button type="button" data-copy="import { memory } from '@lumera/sdk'&#10;&#10;// 1. store a fact once, it is kept forever&#10;await memory.store(agent, 'customer prefers metric units')&#10;&#10;// 2. recall it from any framework or model&#10;const facts = await memory.recall(agent, 'units')&#10;&#10;// 3. ask the network to prove it is still there&#10;const proof = await memory.prove(facts.id)" style="font:500 9.5px 'Geist Mono';color:#C3CBD9;text-transform:uppercase;letter-spacing:.14em;background:none;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 12px;cursor:pointer;">Copy</button>
+</div>
+<pre style="margin:0;padding:24px 22px;overflow-x:auto;font:400 13px/1.9 'Geist Mono';color:#C3CBD9;">import { memory } from '@lumera/sdk'
+
+// 1. store a fact once, it is kept forever
+await memory.store(agent, 'customer prefers metric units')
+
+// 2. recall it from any framework or model
+const facts = await memory.recall(agent, 'units')
+
+// 3. ask the network to prove it is still there
+const proof = await memory.prove(facts.id)</pre>
+</div>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:26px;">
+<span style="font:500 10px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.16em;">Works with</span>
+<span style="font:600 15px 'Geist';color:#C3CBD9;">MCP</span>
+<span style="font:600 15px 'Geist';color:#C3CBD9;">LangChain</span>
+<span style="font:600 15px 'Geist';color:#C3CBD9;">CrewAI</span>
+<span style="font:600 15px 'Geist';color:#C3CBD9;">HTTP API</span>
+<a href="https://docs.lumera.io/" style="font:500 12.5px 'Geist';color:#8693A8;">See every adapter →</a>
+</div>
+</section>
+
+<section style="padding:0 44px 100px;max-width:1180px;margin:0 auto;">
+<h2 data-reveal-head style="font:700 clamp(26px,3vw,38px)/1.12 'Geist';letter-spacing:-.025em;color:#FFFFFF;margin:0 0 22px;">Questions we get asked</h2>
+<div data-acc style="border-top:1px solid rgba(255,255,255,.09);max-width:860px;">
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:1fr 34px;gap:20px;align-items:center;padding:24px 4px;cursor:pointer;">
+<div style="font:600 clamp(16px,1.7vw,19px)/1.35 'Geist';color:#FFFFFF;">Is this a replacement for Pinecone or S3?</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,color .3s;">+</div>
+</div>
+<div data-acc-body style="overflow:hidden;opacity:0;transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;">
+<p style="font:400 15.5px/1.7 'Geist';color:#96A2B6;margin:0 4px 26px;max-width:640px;">No. A vector database makes memory searchable and object storage makes it cheap; neither can prove the data is still there, and both tie the memory to an account you rent. Lumera sits underneath as the permanent, provable copy the agent owns: pay once instead of monthly, retention proven by Merkle challenge instead of promised in an SLA, and every read and write adding to the record the agent carries to its next counterparty. Keep your index, point it here.</p>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:1fr 34px;gap:20px;align-items:center;padding:24px 4px;cursor:pointer;">
+<div style="font:600 clamp(16px,1.7vw,19px)/1.35 'Geist';color:#FFFFFF;">Do I need a wallet?</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,color .3s;">+</div>
+</div>
+<div data-acc-body style="overflow:hidden;opacity:0;transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;">
+<p style="font:400 15.5px/1.7 'Geist';color:#96A2B6;margin:0 4px 26px;max-width:640px;">No. You call the SDK with an API key and get billed like any other service. There is no gas to budget, no token to hold, and no seed phrase for your users.</p>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:1fr 34px;gap:20px;align-items:center;padding:24px 4px;cursor:pointer;">
+<div style="font:600 clamp(16px,1.7vw,19px)/1.35 'Geist';color:#FFFFFF;">What happens if we stop paying?</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,color .3s;">+</div>
+</div>
+<div data-acc-body style="overflow:hidden;opacity:0;transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;">
+<p style="font:400 15.5px/1.7 'Geist';color:#96A2B6;margin:0 4px 26px;max-width:640px;">Nothing is lost. You pay once at the point of writing, and operators keep being compensated for holding it after that, continuously, out of protocol rewards and a share of network fees. Retention does not depend on a subscription staying current, which is the difference between permanence funded and permanence promised.</p>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:1fr 34px;gap:20px;align-items:center;padding:24px 4px;cursor:pointer;">
+<div style="font:600 clamp(16px,1.7vw,19px)/1.35 'Geist';color:#FFFFFF;">Will it work with the framework I already use?</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,color .3s;">+</div>
+</div>
+<div data-acc-body style="overflow:hidden;opacity:0;transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;">
+<p style="font:400 15.5px/1.7 'Geist';color:#96A2B6;margin:0 4px 26px;max-width:640px;">Yes, and you do not swap anything out. The MCP connector mounts underneath the harness you already run, so an agent in LangChain, CrewAI or anything else that speaks MCP keeps its loop exactly as it is and gains memory beneath it. There is also a Python and TypeScript SDK, and an HTTP API for everything else.</p>
+</div>
+</div>
+<div data-acc-item data-row style="position:relative;border-bottom:1px solid rgba(255,255,255,.09);">
+<div data-acc-head role="button" tabindex="0" style="display:grid;grid-template-columns:1fr 34px;gap:20px;align-items:center;padding:24px 4px;cursor:pointer;">
+<div style="font:600 clamp(16px,1.7vw,19px)/1.35 'Geist';color:#FFFFFF;">Can I delete something once it is written?</div>
+<div data-acc-icon style="justify-self:end;width:26px;height:26px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 15px 'Geist';color:#C3CBD9;transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,color .3s;">+</div>
+</div>
+<div data-acc-body style="overflow:hidden;opacity:0;transition:max-height .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;">
+<p style="font:400 15.5px/1.7 'Geist';color:#96A2B6;margin:0 4px 26px;max-width:640px;">Not in the sense of erasing it, and that is deliberate: a memory you could quietly remove is not evidence. What you control is what goes in, and you can supersede a record so the current answer changes while the history stays intact. Treat it the way you would an append-only ledger, and keep anything you may need to erase out of it.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding:0 44px 110px;max-width:1180px;margin:0 auto;">
+<div style="border:1px solid rgba(71,199,138,.32);border-radius:16px;padding:40px;background:linear-gradient(160deg,rgba(71,199,138,.1),rgba(7,138,138,.03));display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;">
+<div><h2 style="font:700 clamp(24px,2.6vw,34px)/1.15 'Geist';letter-spacing:-.02em;color:#FFFFFF;margin:0;">Give it a memory today.</h2><p style="font:400 15px/1.6 'Geist';color:#C3CBD9;margin:10px 0 0;max-width:440px;">Three calls and an API key. The network does the rest.</p></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="https://docs.lumera.io/" data-magnetic data-accent-bg style="font:600 14px 'Geist';color:#001432;background:#47C78A;padding:14px 24px;border-radius:10px;">Read the docs →</a>
+<a href="https://hub.lumera.io/" data-magnetic style="font:600 14px 'Geist';color:#F5F5FA;border:1px solid rgba(255,255,255,.22);padding:14px 24px;border-radius:10px;">Open the app →</a>
+</div>
+</div>
+</section>
+</div>
+
+
+<!-- ================= BLOG ================= -->

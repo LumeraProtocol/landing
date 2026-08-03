@@ -1,0 +1,23 @@
+{
+  "name": "lumera-site-v2",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Lumera site v2 — plain HTML/CSS/JS served by the Vite dev server, no bundling",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/three": "^0.134.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "lenis": "1.3.23",
+    "three": "0.134.0"
+  }
+}
