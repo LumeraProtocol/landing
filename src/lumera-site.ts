@@ -47,6 +47,7 @@ export class LumeraSite {
   declare _tgCur: any;
   declare _theme: any;
   declare _themeBooted: any;
+  declare closeMobileMenu: any;
   declare lenis: any;
 
   constructor(props){ this.props = props || {}; }
@@ -152,21 +153,65 @@ export class LumeraSite {
     document.querySelectorAll('img[alt="Lumera"]').forEach(i=>{ i.style.filter = light?'brightness(0) saturate(100%) opacity(.88)':''; });
     this.recolourGalaxy();
     this.applyAccent();
-    const btn=document.querySelector('[data-theme-btn]');
-    if(btn){
+    document.querySelectorAll('[data-theme-btn]').forEach(btn=>{
       btn.textContent = light?'Dark':'Light';
       btn.setAttribute('aria-label','Switch to '+(light?'dark':'light')+' mode');
-    }
+    });
     if(!skipRepaint) (this._repaint||[]).forEach(f=>{ try{ f(); }catch(e){} });
     try{ localStorage.setItem('lumera-theme',mode); }catch(e){}
   }
 
   initTheme(){
     this._repaint=this._repaint||[];
-    const btn=document.querySelector('[data-theme-btn]');
-    if(btn) btn.addEventListener('click',()=>this.applyTheme(this._theme==='light'?'dark':'light'));
+    document.querySelectorAll('[data-theme-btn]').forEach(btn=>{
+      btn.addEventListener('click',()=>this.applyTheme(this._theme==='light'?'dark':'light'));
+    });
     this._themeBooted = true;
     this.applyTheme(this._theme, true);
+  }
+
+  initMobileMenu(){
+    const toggle=document.querySelector('[data-nav-toggle]');
+    const drawer=document.querySelector('[data-nav-drawer]');
+    if(!toggle || !drawer) return;
+
+    const openMenu=()=>{
+      drawer.classList.add('is-open');
+      (drawer as HTMLElement).style.display='flex';
+      document.body.classList.add('mobile-menu-open');
+      toggle.setAttribute('aria-expanded','true');
+      const ham=toggle.querySelector('.hamburger-icon') as HTMLElement;
+      const cls=toggle.querySelector('.close-icon') as HTMLElement;
+      if(ham) ham.style.display='none';
+      if(cls) cls.style.display='block';
+    };
+
+    const closeMenu=()=>{
+      drawer.classList.remove('is-open');
+      (drawer as HTMLElement).style.display='none';
+      document.body.classList.remove('mobile-menu-open');
+      toggle.setAttribute('aria-expanded','false');
+      const ham=toggle.querySelector('.hamburger-icon') as HTMLElement;
+      const cls=toggle.querySelector('.close-icon') as HTMLElement;
+      if(ham) ham.style.display='block';
+      if(cls) cls.style.display='none';
+    };
+
+    this.closeMobileMenu = closeMenu;
+
+    toggle.addEventListener('click',(e)=>{
+      e.stopPropagation();
+      if(drawer.classList.contains('is-open')) closeMenu();
+      else openMenu();
+    });
+
+    document.querySelectorAll('[data-nav-drawer] a').forEach(a=>{
+      a.addEventListener('click',()=>closeMenu());
+    });
+
+    window.addEventListener('resize',()=>{
+      if(window.innerWidth>=768 && drawer.classList.contains('is-open')) closeMenu();
+    });
   }
 
   applyAccent(){
@@ -182,6 +227,7 @@ export class LumeraSite {
     try{ this._theme = localStorage.getItem('lumera-theme')==='light' ? 'light' : 'dark'; }
     catch(e){ this._theme='dark'; }
     this.applyAccent();
+    this.initMobileMenu();
     this.initRouter();
     this.trackProgress();
     this.initLogos();
@@ -235,11 +281,13 @@ export class LumeraSite {
   }
 
   go(id){
+    if(this.closeMobileMenu) this.closeMobileMenu();
     if(location.hash!=='#'+id){ try{ history.pushState(null,'','#'+id); }catch(e){} }
     this.show(id);
   }
 
   show(id){
+    if(this.closeMobileMenu) this.closeMobileMenu();
     if(!this._pages) return;
     // Vision and Token merged into Protocol, keep old links working, land on the right section
     const ALIAS={vision:'protocol',platform:'protocol'};

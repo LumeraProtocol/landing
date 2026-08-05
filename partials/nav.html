@@ -3,17 +3,88 @@
 <div id="prog" style="height:100%;width:100%;background:#47C78A;transform:scaleX(0);transform-origin:left center;" data-accent-bg></div>
 </div>
 
-<nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 44px;background:rgba(0,20,50,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.09);">
-<a href="#home" data-nav="home" style="display:inline-flex;align-items:center;flex:0 0 auto;"><img src="/assets/lumera-logo-white.svg" alt="Lumera" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='inline-block'" style="height:21px;display:block;"><span style="display:none;font:700 18px 'Geist';color:#fff;">lumera</span></a>
-<span style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
-<a href="#protocol" data-nav="protocol" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;">Protocol</a>
-<a href="#memory" data-nav="memory" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;">Memory</a>
-<a href="#network" data-nav="network" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;">Network</a>
-<a href="#roadmap" data-nav="roadmap" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;">Roadmap</a>
-<a href="https://docs.lumera.io/" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;">Docs</a>
-<a href="#community" data-goto="community" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;">Community</a>
+<nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 44px;background:rgba(0,20,50,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.09);">
+<a href="#home" data-nav="home" style="display:inline-flex;align-items:center;flex:0 0 auto;min-height:44px;"><img src="/assets/lumera-logo-white.svg" alt="Lumera" onerror="this.style.display='none';var s=this.nextElementSibling;if(s)s.style.display='inline-block'" style="height:21px;display:block;"><span style="display:none;font:700 18px 'Geist';color:#fff;">lumera</span></a>
+<span class="nav-links-desktop" style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
+<a href="#protocol" data-nav="protocol" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;">Protocol</a>
+<a href="#memory" data-nav="memory" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;">Memory</a>
+<a href="#network" data-nav="network" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;">Network</a>
+<a href="#roadmap" data-nav="roadmap" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;">Roadmap</a>
+<a href="https://docs.lumera.io/" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;">Docs</a>
+<a href="#community" data-goto="community" style="font:500 12.5px 'Geist';color:#C3CBD9;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;">Community</a>
 </span>
-<span style="display:flex;align-items:center;gap:14px;flex:0 0 auto;"><button data-theme-btn type="button" aria-label="Switch to light mode" style="font:600 10px 'Geist Mono';letter-spacing:.16em;text-transform:uppercase;color:#C3CBD9;background:none;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 13px;cursor:pointer;white-space:nowrap;">Light</button><a href="https://hub.lumera.io/" data-magnetic data-accent-bg style="font:600 12.5px 'Geist';color:#001432;background:#47C78A;padding:10px 16px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;">Lumera Hub</a></span>
+<span class="nav-actions-desktop" style="display:flex;align-items:center;gap:14px;flex:0 0 auto;"><button data-theme-btn type="button" aria-label="Switch to light mode" style="font:600 10px 'Geist Mono';letter-spacing:.16em;text-transform:uppercase;color:#C3CBD9;background:none;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 13px;cursor:pointer;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center;">Light</button><a href="https://hub.lumera.io/" data-magnetic data-accent-bg style="font:600 12.5px 'Geist';color:#001432;background:#47C78A;padding:10px 16px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;min-height:44px;">Lumera Hub</a></span>
+<button data-nav-toggle class="nav-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" type="button" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:10px;color:#F5F5FA;cursor:pointer;z-index:52;transition:all .2s ease;">
+<svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+</button>
 </nav>
+
+<!-- Mobile Navigation Drawer -->
+<div data-nav-drawer class="nav-mobile-drawer" style="position:fixed;top:60px;left:0;right:0;bottom:0;z-index:49;background:radial-gradient(circle at 85% 15%,rgba(71,199,138,.12) 0%,transparent 60%),rgba(0,20,50,.96);backdrop-filter:blur(28px) saturate(160%);-webkit-backdrop-filter:blur(28px) saturate(160%);display:none;flex-direction:column;justify-content:space-between;padding:24px 20px 32px;overflow-y:auto;border-bottom:1px solid rgba(71,199,138,.2);">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:0 4px 8px;border-bottom:1px solid rgba(255,255,255,.08);">
+<span style="font:600 10.5px 'Geist Mono';color:#8693A8;text-transform:uppercase;letter-spacing:.22em;">Navigation</span>
+<span data-accent-bg style="width:24px;height:2px;background:#47C78A;border-radius:1px;"></span>
+</div>
+
+<a href="#protocol" data-nav="protocol" class="mobile-nav-item">
+<span style="display:flex;align-items:center;gap:14px;">
+<span style="font:600 11px 'Geist Mono';color:#47C78A;opacity:.85;letter-spacing:.12em;" data-accent-fg>01</span>
+<span style="font:600 17px 'Geist';color:#F5F5FA;">Protocol</span>
+</span>
+<svg class="mobile-nav-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8693A8;opacity:.5;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+
+<a href="#memory" data-nav="memory" class="mobile-nav-item">
+<span style="display:flex;align-items:center;gap:14px;">
+<span style="font:600 11px 'Geist Mono';color:#47C78A;opacity:.85;letter-spacing:.12em;" data-accent-fg>02</span>
+<span style="font:600 17px 'Geist';color:#F5F5FA;">Memory</span>
+</span>
+<svg class="mobile-nav-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8693A8;opacity:.5;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+
+<a href="#network" data-nav="network" class="mobile-nav-item">
+<span style="display:flex;align-items:center;gap:14px;">
+<span style="font:600 11px 'Geist Mono';color:#47C78A;opacity:.85;letter-spacing:.12em;" data-accent-fg>03</span>
+<span style="font:600 17px 'Geist';color:#F5F5FA;">Network</span>
+</span>
+<svg class="mobile-nav-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8693A8;opacity:.5;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+
+<a href="#roadmap" data-nav="roadmap" class="mobile-nav-item">
+<span style="display:flex;align-items:center;gap:14px;">
+<span style="font:600 11px 'Geist Mono';color:#47C78A;opacity:.85;letter-spacing:.12em;" data-accent-fg>04</span>
+<span style="font:600 17px 'Geist';color:#F5F5FA;">Roadmap</span>
+</span>
+<svg class="mobile-nav-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8693A8;opacity:.5;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+
+<a href="https://docs.lumera.io/" class="mobile-nav-item">
+<span style="display:flex;align-items:center;gap:14px;">
+<span style="font:600 11px 'Geist Mono';color:#47C78A;opacity:.85;letter-spacing:.12em;" data-accent-fg>05</span>
+<span style="font:600 17px 'Geist';color:#F5F5FA;">Docs</span>
+</span>
+<svg class="mobile-nav-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8693A8;opacity:.5;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+
+<a href="#community" data-goto="community" class="mobile-nav-item">
+<span style="display:flex;align-items:center;gap:14px;">
+<span style="font:600 11px 'Geist Mono';color:#47C78A;opacity:.85;letter-spacing:.12em;" data-accent-fg>06</span>
+<span style="font:600 17px 'Geist';color:#F5F5FA;">Community</span>
+</span>
+<svg class="mobile-nav-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8693A8;opacity:.5;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:16px;margin-top:24px;">
+<div style="height:1px;background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,.12),rgba(255,255,255,0));"></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr;gap:12px;">
+<button data-theme-btn type="button" aria-label="Switch to light mode" style="font:600 11px 'Geist Mono';letter-spacing:.16em;text-transform:uppercase;color:#C3CBD9;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:12px;cursor:pointer;min-height:48px;display:flex;align-items:center;justify-content:center;transition:all .2s;">Light</button>
+<a href="https://hub.lumera.io/" data-magnetic data-accent-bg style="font:600 15px 'Geist';color:#001432;background:#47C78A;padding:12px 20px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;box-shadow:0 4px 20px rgba(71,199,138,0.25);transition:all .2s;">Lumera Hub <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+</div>
+<div style="font:400 11px 'Geist Mono';color:#8693A8;text-align:center;margin-top:4px;">Lumera Protocol • Intelligence Layer</div>
+</div>
+</div>
 
 <!-- ================= HOME ================= -->
