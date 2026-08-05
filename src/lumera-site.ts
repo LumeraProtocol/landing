@@ -1,6 +1,8 @@
 /* Lumera Site v2 — page logic. Plain-JS port of the design-canvas
-   component: router, reveals, theme, hero galaxy. Expects window.THREE
-   and window.Lenis to exist before init() runs.
+   component: router, reveals, theme, hero galaxy. window.THREE and
+   window.Lenis are optional and may arrive after init(): the galaxy is
+   skipped while THREE is absent (rebuildGalaxy() picks it up when it
+   lands) and scrolling stays native while Lenis is absent.
    NOTE: the method bodies are byte-identical to the verified JS —
    typing is added only through erasable syntax (declare fields and the
    global shims in shims.d.ts), so the emitted runtime is unchanged. */
@@ -45,21 +47,13 @@ export class LumeraSite {
   declare _tgCur: any;
   declare _theme: any;
   declare _themeBooted: any;
-  declare _tries: any;
   declare lenis: any;
 
   constructor(props){ this.props = props || {}; }
 
-  init(){ this._tries=0; this._intervals=[]; this.waitForLibs(); }
-
-  waitForLibs(){
-    if(this._dead) return;
-    const ready = window.THREE && window.Lenis;
-    if(ready) return this.boot(false);
-    if(this._tries>140) return this.boot(true);
-    this._tries++;
-    setTimeout(()=>this.waitForLibs(),50);
-  }
+  // Nothing to wait for — main.ts loads three and lenis after boot and hands
+  // them over when they arrive, so the page goes interactive immediately.
+  init(){ this._intervals=[]; this.boot(false); }
 
   mode(){
     try{ if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 'off'; }catch(e){}
@@ -194,6 +188,12 @@ export class LumeraSite {
     const mode=this.mode();
     if(degraded) return;
     if(mode!=='off') this.initGalaxy();
+    // The hero copy used to be released only at the end of initGalaxy(), which
+    // tied the headline — the LCP element — to three.js loading, and left it
+    // permanently invisible whenever the galaxy bailed out (no WebGL, and now
+    // also: not downloaded yet). playHeroCopy() guards on _heroShown, so
+    // initGalaxy()'s own call becomes a no-op and the timing is unchanged.
+    if(mode!=='off') this.playHeroCopy(160);
     let coarsePtr=false;
     try{ coarsePtr = matchMedia('(hover:none) and (pointer:coarse)').matches; }catch(e){}
     if(mode!=='off' && !coarsePtr && (this.props.smoothScroll ?? true)) this.initLenis();
